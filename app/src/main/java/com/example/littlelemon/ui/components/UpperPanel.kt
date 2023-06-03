@@ -57,13 +57,7 @@ fun UpperPanel() {
                     modifier = Modifier.clip(RoundedCornerShape(10.dp))
                 )
             }
-            Button(
-                onClick = { }
-            ) {
-                Text(
-                    text = stringResource(id = R.string.order_button_text)
-                )
-            }
+
         }
 
     }
@@ -74,3 +68,13 @@ fun UpperPanel() {
 fun UpperPanelPreview() {
     UpperPanel()
 }
+
+/*
+Button(
+                onClick = { }
+            ) {
+                Text(
+                    text = stringResource(id = R.string.order_button_text)
+                )
+            }
+ */

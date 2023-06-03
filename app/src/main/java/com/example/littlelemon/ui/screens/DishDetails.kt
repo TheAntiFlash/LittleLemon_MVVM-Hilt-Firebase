@@ -38,8 +38,9 @@ fun DishDetails(id: Int, viewModel: DishViewModel) {
     var isLoading by remember {
         mutableStateOf(true)
     }
+
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-        TopAppBar(drawerContent = { DrawerContent() },)
+        //TopAppBar()
         Box{
             Image(
                 painter = rememberAsyncImagePainter(dish.imageUrl, onLoading = {isLoading = true}, onSuccess = {isLoading = false} ),

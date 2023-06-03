@@ -27,7 +27,7 @@ import com.example.littlelemon.ui.viewmodel.DishViewModel
 fun LowerPanel(navController: NavHostController, viewModel: DishViewModel) {
     Column {
         WeeklySpecialCard()
-        Box {
+        Box(modifier = Modifier.fillMaxSize()) {
             if(viewModel.dishes.isNotEmpty()){
                 LazyColumn {
                     itemsIndexed(viewModel.dishes) { _, dish ->
@@ -79,9 +79,9 @@ fun MenuDish(navController: NavHostController? = null, dish: Dish) {
                     .padding(0.dp, 5.dp, 0.dp, 5.dp))
                 Text(text = "$${dish.price}", style =  MaterialTheme.typography.body2)
             }
-            Image(painter = rememberAsyncImagePainter(dish.imageUrl), contentDescription = null, modifier = Modifier.clip(
+            Image(painter = rememberAsyncImagePainter(model = dish.imageUrl), contentDescription = null, modifier = Modifier.clip(
                 RoundedCornerShape(10.dp)
-            ), contentScale = ContentScale.FillWidth )
+            ).fillMaxWidth(), contentScale = ContentScale.FillWidth )
         }
     }
     Divider(
