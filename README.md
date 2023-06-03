@@ -11,8 +11,8 @@ LittleLemon is a restaurant menu app built using Kotlin and Jetpack Compose. It 
 - Dependency injection is handled using Hilt.
 
 ## Screenshots
+<img src="screenshots/LittleLemonMainScreen.png" alt="Little Lemon Main Screen" width="320" /> <img src="screenshots/LittleLemonDishDetails.png" alt="Little Lemon Dish Details" width="320" /> <img src="screenshots/LittleLemonDrawer.png" alt="Little Lemon Drawer" width="320" /> 
 
-[Add relevant screenshots of your app here]
 
 ## Tech Stack
 
